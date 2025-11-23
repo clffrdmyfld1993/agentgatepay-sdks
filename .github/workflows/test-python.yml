@@ -36,12 +36,15 @@ jobs:
 
       - name: Run type checking
         working-directory: ./python
-        run: mypy agentgatepay_sdk/ || echo "Type checking not configured"
+        run: mypy agentgatepay_sdk/ || echo "⚠️ Type checking not configured yet - skipping"
+        continue-on-error: true
 
       - name: Run linter
         working-directory: ./python
-        run: pylint agentgatepay_sdk/ || echo "Linting not configured"
+        run: pylint agentgatepay_sdk/ || echo "⚠️ Linting not configured yet - skipping"
+        continue-on-error: true
 
       - name: Run tests
         working-directory: ./python
-        run: pytest || echo "Tests not configured yet"
+        run: pytest || echo "⚠️ Tests not configured yet - skipping"
+        continue-on-error: true

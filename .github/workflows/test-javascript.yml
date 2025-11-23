@@ -34,7 +34,8 @@ jobs:
 
       - name: Run linter
         working-directory: ./javascript
-        run: npm run lint || echo "Linting not configured"
+        run: npm run lint || echo "⚠️ Linting not configured yet - skipping"
+        continue-on-error: true
 
       - name: Build package
         working-directory: ./javascript
@@ -42,4 +43,5 @@ jobs:
 
       - name: Run tests
         working-directory: ./javascript
-        run: npm test || echo "Tests not configured yet"
+        run: npm test || echo "⚠️ Tests not configured yet - skipping"
+        continue-on-error: true

@@ -111,12 +111,12 @@ payment = client.payments.submit_payment(
 
 ## Supported Chains & Tokens
 
-| Chain | Networks | Tokens |
-|-------|----------|--------|
-| **Ethereum** | Mainnet | USDC, USDT, DAI |
-| **Base** | Mainnet | USDC, USDT, DAI |
-| **Polygon** | Mainnet | USDC, USDT, DAI |
-| **Arbitrum** | One | USDC, USDT, DAI |
+| Chain | Chain ID | Network Name | Tokens |
+|-------|----------|--------------|--------|
+| **Ethereum** | 1 | Ethereum Mainnet | USDC, USDT, DAI |
+| **Base** | 8453 | Base | USDC, USDT, DAI |
+| **Polygon** | 137 | Polygon | USDC, USDT, DAI |
+| **Arbitrum** | 42161 | Arbitrum One | USDC, USDT, DAI |
 
 ---
 

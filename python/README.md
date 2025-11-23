@@ -496,7 +496,7 @@ print(user['apiKey'])  # Use this for 5x rate limit!
 - **Documentation:** https://docs.agentgatepay.io
 - **SDK Repository:** https://github.com/AgentGatePay/agentgatepay-sdks
 - **Issues:** https://github.com/AgentGatePay/agentgatepay-sdks/issues
-- **Email:** support@agentgatepay.io
+- **Email:** support@agentgatepay.com
 
 ## License
 

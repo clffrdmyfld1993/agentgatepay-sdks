@@ -12,7 +12,7 @@ setup(
     name="agentgatepay-sdk",
     version="1.1.0",
     author="AgentGatePay",
-    author_email="support@agentgatepay.io",
+    author_email="support@agentgatepay.com",
     description="Official Python SDK for AgentGatePay - Payment gateway for AI agents",
     long_description=long_description,
     long_description_content_type="text/markdown",

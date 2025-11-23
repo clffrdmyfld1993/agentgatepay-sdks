@@ -203,7 +203,7 @@ git push origin py-v1.1.1
 ## Need Help?
 
 - **Issues**: [GitHub Issues](https://github.com/AgentGatePay/agentgatepay-sdks/issues)
-- **Email**: support@agentgatepay.io
+- **Email**: support@agentgatepay.com
 - **Documentation**: https://docs.agentgatepay.io
 
 ## License

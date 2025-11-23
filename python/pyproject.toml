@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentgatepay-sdk"
+version = "1.0.0"
+description = "Official Python SDK for AgentGatePay - Payment gateway for AI agents"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "AgentGatePay", email = "support@agentgatepay.io"}
+]
+keywords = [
+    "agentgatepay",
+    "payments",
+    "ai-agents",
+    "crypto",
+    "web3",
+    "ap2",
+    "x402"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+web3 = ["web3>=6.0.0"]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentgatepay/agentgatepay-python-sdk"
+Documentation = "https://docs.agentgatepay.io"
+Repository = "https://github.com/agentgatepay/agentgatepay-python-sdk"
+Issues = "https://github.com/agentgatepay/agentgatepay-python-sdk/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

@@ -1,0 +1,15 @@
+{
+  "agentId": "my-agent@example.com",
+  "mandate": {
+    "budgetUsd": 100,
+    "ttlMinutes": 10080,
+    "scope": "*"
+  },
+  "chains": {
+    "preferred": "base",
+    "fallback": ["ethereum", "polygon", "arbitrum"]
+  },
+  "tokens": {
+    "preferred": "USDC"
+  }
+}

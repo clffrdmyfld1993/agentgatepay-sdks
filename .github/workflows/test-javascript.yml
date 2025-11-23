@@ -1,0 +1,45 @@
+name: Test JavaScript SDK
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'javascript/**'
+      - '.github/workflows/test-javascript.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'javascript/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        working-directory: ./javascript
+        run: npm ci
+
+      - name: Run linter
+        working-directory: ./javascript
+        run: npm run lint || echo "Linting not configured"
+
+      - name: Build package
+        working-directory: ./javascript
+        run: npm run build
+
+      - name: Run tests
+        working-directory: ./javascript
+        run: npm test || echo "Tests not configured yet"

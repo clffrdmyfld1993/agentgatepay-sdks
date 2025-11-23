@@ -734,10 +734,33 @@ const client = new AgentPayGW({
 
 ---
 
-## Rate Limits
+## Rate Limits & Security (AIF)
 
-- **Without API key:** 20 requests/minute
-- **With API key:** 100 requests/minute (5x higher!)
+**AIF (Agent Interaction Firewall)** - The first firewall built specifically for AI agents.
+
+### Rate Limits
+
+| User Type | Rate Limit | Benefits |
+|-----------|------------|----------|
+| **Anonymous** | 20 req/min | Basic access, no signup |
+| **With Account** | 100 req/min | **5x more requests**, payment history, reputation tracking |
+
+**Create a free account to increase your limits:**
+```typescript
+const user = await client.auth.signup(
+  'agent@example.com',
+  'secure_password',
+  'agent' // or 'merchant' or 'both'
+);
+console.log(user.apiKey); // Use this for 5x rate limit!
+```
+
+### Security Features
+
+- ✅ **Distributed rate limiting** (DynamoDB atomic counters)
+- ✅ **Replay protection** (TX-hash nonces, 24h TTL)
+- ✅ **Agent reputation system** (0-200 score, enabled by default)
+- ✅ **Mandatory mandates** (budget & scope enforcement)
 
 Rate limit info is included in error messages:
 
@@ -755,8 +778,9 @@ catch (error) {
 
 ## Support
 
-- **Documentation:** [https://docs.agentgatepay.io](https://docs.agentgatepay.io)
-- **Issues:** [https://github.com/agentgatepay/agentgatepay-sdk/issues](https://github.com/agentgatepay/agentgatepay-sdk/issues)
+- **Documentation:** https://docs.agentgatepay.io
+- **SDK Repository:** https://github.com/AgentGatePay/agentgatepay-sdks
+- **Issues:** https://github.com/AgentGatePay/agentgatepay-sdks/issues
 - **Email:** support@agentgatepay.io
 
 ---

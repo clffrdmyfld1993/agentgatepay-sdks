@@ -1,6 +1,6 @@
 # agentgatepay-sdk
 
-Official Python SDK for [AgentGatePay](https://agentgatepay.io) - Payment gateway for AI agents.
+Official Python SDK for [AgentGatePay](https://agentgatepay.io) - Secure multi-chain cryptocurrency payment gateway for AI agents and autonomous systems.
 
 [![PyPI version](https://img.shields.io/pypi/v/agentgatepay-sdk.svg)](https://pypi.org/project/agentgatepay-sdk/)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)

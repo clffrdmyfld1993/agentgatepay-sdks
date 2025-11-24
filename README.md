@@ -1,6 +1,6 @@
 # AgentGatePay SDKs
 
-Official JavaScript/TypeScript and Python SDKs for [AgentGatePay](https://api.agentgatepay.com) - Payment gateway for the agent economy.
+Official JavaScript/TypeScript and Python SDKs for [AgentGatePay](https://api.agentgatepay.com) - Secure multi-chain cryptocurrency payment gateway for AI agents and autonomous systems.
 
 [![npm version](https://badge.fury.io/js/agentgatepay-sdk.svg)](https://www.npmjs.com/package/agentgatepay-sdk)
 [![PyPI version](https://badge.fury.io/py/agentgatepay-sdk.svg)](https://pypi.org/project/agentgatepay-sdk/)
@@ -31,28 +31,29 @@ npm install agentgatepay-sdk
 
 **Quick Start:**
 ```typescript
-import { AgentGatePayClient } from 'agentgatepay-sdk';
+import { AgentGatePay } from 'agentgatepay-sdk';
 
-const client = new AgentGatePayClient({
+const client = new AgentGatePay({
   apiKey: 'pk_live_...',
-  baseUrl: 'https://api.agentgatepay.com'
+  apiUrl: 'https://api.agentgatepay.com'
 });
 
-// Issue a mandate
-const mandate = await client.mandates.issue({
-  subject: 'my-agent-123',
-  budget_usd: 100.0,
-  scope: 'resource.read,payment.execute',
-  ttl_minutes: 1440
-});
+// Issue a mandate (budget tracks spending in USD equivalent)
+const mandate = await client.mandates.issue(
+  'my-agent-123',                           // subject
+  100.0,                                    // budget in USD (tracks value across USDC/USDT/DAI)
+  'resource.read,payment.execute',          // scope
+  1440                                      // ttl_minutes
+);
 
-// Make a payment
-const payment = await client.payments.submitPayment({
-  mandate_token: mandate.token,
-  tx_hash: '0x...',
-  chain: 'base',
-  token: 'USDC'
-});
+// Make a payment (client pays in stablecoins: USDC, USDT, or DAI)
+const payment = await client.payments.submitTxHash(
+  mandate.mandateToken,                     // mandate token
+  '0x...',                                  // blockchain tx_hash (client sends USDC/USDT/DAI)
+  undefined,                                // tx_hash_commission (optional)
+  'base',                                   // chain (ethereum, base, polygon, arbitrum)
+  'USDC'                                    // token (USDC, USDT, or DAI)
+);
 ```
 
 📚 **[Full JavaScript Documentation](./javascript/README.md)**
@@ -68,27 +69,27 @@ pip install agentgatepay-sdk
 
 **Quick Start:**
 ```python
-from agentgatepay_sdk import AgentGatePayClient
+from agentgatepay_sdk import AgentGatePay
 
-client = AgentGatePayClient(
+client = AgentGatePay(
     api_key='pk_live_...',
-    base_url='https://api.agentgatepay.com'
+    api_url='https://api.agentgatepay.com'
 )
 
-# Issue a mandate
+# Issue a mandate (budget tracks spending in USD equivalent)
 mandate = client.mandates.issue(
     subject='my-agent-123',
-    budget_usd=100.0,
+    budget=100.0,                            # budget in USD (tracks value across USDC/USDT/DAI)
     scope='resource.read,payment.execute',
     ttl_minutes=1440
 )
 
-# Make a payment
-payment = client.payments.submit_payment(
-    mandate_token=mandate['token'],
-    tx_hash='0x...',
-    chain='base',
-    token='USDC'
+# Make a payment (client pays in stablecoins: USDC, USDT, or DAI)
+payment = client.payments.submit_tx_hash(
+    mandate=mandate['mandateToken'],         # mandate token
+    tx_hash='0x...',                         # blockchain tx_hash (client sends USDC/USDT/DAI)
+    chain='base',                            # chain (ethereum, base, polygon, arbitrum)
+    token='USDC'                             # token (USDC, USDT, or DAI)
 )
 ```
 

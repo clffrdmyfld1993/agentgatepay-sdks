@@ -1,6 +1,6 @@
 # agentgatepay-sdk
 
-Official JavaScript/TypeScript SDK for [AgentGatePay](https://agentgatepay.io) - Payment gateway for AI agents.
+Official JavaScript/TypeScript SDK for [AgentGatePay](https://agentgatepay.io) - Secure multi-chain cryptocurrency payment gateway for AI agents and autonomous systems.
 
 [![npm version](https://img.shields.io/npm/v/agentgatepay-sdk.svg)](https://www.npmjs.com/package/agentgatepay-sdk)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)

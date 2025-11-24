@@ -13,7 +13,7 @@ setup(
     version="1.1.2",
     author="AgentGatePay",
     author_email="support@agentgatepay.com",
-    description="Official Python SDK for AgentGatePay - Secure multi-chain cryptocurrency payment gateway for AI agents",
+    description="Official Python SDK for AgentGatePay - Secure Payment Gateway for AI agents",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/AgentGatePay/agentgatepay-sdks",

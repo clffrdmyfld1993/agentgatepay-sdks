@@ -10,10 +10,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="agentgatepay-sdk",
-    version="1.1.1",
+    version="1.1.2",
     author="AgentGatePay",
     author_email="support@agentgatepay.com",
-    description="Official Python SDK for AgentGatePay - Payment gateway for AI agents",
+    description="Official Python SDK for AgentGatePay - Secure multi-chain cryptocurrency payment gateway for AI agents",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/AgentGatePay/agentgatepay-sdks",

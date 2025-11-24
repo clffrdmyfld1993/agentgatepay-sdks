@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agentgatepay-sdk"
-version = "1.1.1"
-description = "Official Python SDK for AgentGatePay - Payment gateway for AI agents"
+version = "1.1.2"
+description = "Official Python SDK for AgentGatePay - Secure multi-chain cryptocurrency payment gateway for AI agents"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}

@@ -43,9 +43,9 @@ export class MandatesModule {
 
     const request: IssueMandateRequest = {
       subject,
-      budget,
+      budget_usd: budget,
       scope,
-      ttlMinutes
+      ttl_minutes: ttlMinutes
     };
 
     const response = await this.http.post<IssueMandateResponse>('/mandates/issue', request);
@@ -67,7 +67,7 @@ export class MandatesModule {
     validateMandateToken(mandateToken);
 
     const response = await this.http.post<VerifyMandateResponse>('/mandates/verify', {
-      mandateToken
+      mandate_token: mandateToken
     });
 
     if (!response.data) {

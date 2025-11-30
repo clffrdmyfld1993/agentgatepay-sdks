@@ -33,9 +33,9 @@ class MandatesModule:
         """
         data = {
             "subject": subject,
-            "budget": budget,
+            "budget_usd": budget,
             "scope": scope,
-            "ttlMinutes": ttl_minutes,
+            "ttl_minutes": ttl_minutes,
         }
 
         return self._http.post("/mandates/issue", data)
@@ -50,7 +50,7 @@ class MandatesModule:
         Returns:
             Verification result with payload if valid
         """
-        data = {"mandateToken": mandate_token}
+        data = {"mandate_token": mandate_token}
 
         return self._http.post("/mandates/verify", data)
 

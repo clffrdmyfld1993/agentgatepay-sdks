@@ -118,9 +118,9 @@ export interface CreateAPIKeyResponse {
  */
 export interface IssueMandateRequest {
   subject: string;
-  budget: number;
+  budget_usd: number;
   scope?: string;
-  ttlMinutes?: number;
+  ttl_minutes?: number;
 }
 
 export interface IssueMandateResponse {

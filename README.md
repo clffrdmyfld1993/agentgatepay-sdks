@@ -314,9 +314,9 @@ twine upload dist/*
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/AgentGatePay/agentgatepay-sdks/issues)
+- **GitHub Issues**: [AgentGatePay/agentgatepay-sdks](https://github.com/AgentGatePay/agentgatepay-sdks/issues)
+- **Examples Repository**: [AgentGatePay/agentgatepay-examples](https://github.com/AgentGatePay/agentgatepay-examples)
 - **Email**: support@agentgatepay.com
-- **Documentation**: https://docs.agentgatepay.io
 
 ---
 

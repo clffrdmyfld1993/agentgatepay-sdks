@@ -1,26 +1,37 @@
-Copyright (c) 2025 AgentGatePay
+Copyright (c) 2025 AgentGatePay. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and to permit
-persons to whom the Software is furnished to do so, subject to the following
-conditions:
+SDK LICENSE
 
-1. The Software is intended for use with AgentGatePay services.
+This SDK is provided to enable integration with AgentGatePay services.
 
-2. The Software may not be used for illegal purposes or in violation of any
-   applicable laws and regulations.
+PERMITTED USE:
+You may freely use this SDK to:
+- Integrate AgentGatePay into your applications (commercial or non-commercial)
+- Build products and services that connect to AgentGatePay APIs
+- Create proprietary/closed-source applications using this SDK
+- Modify the SDK to fit your integration needs
+- Include this SDK in your distributed applications
+- Publish applications that depend on this SDK
 
-3. The above copyright notice and this permission notice shall be included
-   in all copies or substantial portions of the Software.
+RESTRICTIONS:
+This license does NOT grant rights to:
+- The AgentGatePay service, infrastructure, or backend systems
+- Recreate or duplicate the AgentGatePay platform
+- Create competing payment gateway services
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+OWNERSHIP:
+AgentGatePay services, APIs, protocols, and infrastructure remain the
+exclusive proprietary property of AgentGatePay.
 
-For questions regarding usage rights: support@agentgatepay.com
+NO WARRANTY:
+This SDK is provided "AS IS" without warranty of any kind.
+
+---
+
+INTEGRATIONS WELCOMED
+
+You are explicitly encouraged to build commercial applications, SaaS products,
+and proprietary systems using this SDK. No approval needed. No restrictions on
+commercial use of your applications.
+
+Questions? support@agentgatepay.com

@@ -1,45 +1,33 @@
 Copyright (c) 2025 AgentGatePay
-All Rights Reserved.
 
-This SDK (Software Development Kit) is proprietary to AgentGatePay.
+SDK LICENSE
 
-PERMITTED USE:
-You may use this SDK for the following purposes:
-- Integrating AgentGatePay services into your applications
-- Building applications that connect to AgentGatePay APIs
-- Development, testing, and production deployment of applications using AgentGatePay
-- Internal use within your organization
+This SDK is provided to make integrating with AgentGatePay easy and fast.
 
-RESTRICTIONS:
-You may NOT:
-- Create derivative SDKs for competing payment gateway services
-- Redistribute this SDK as part of a competing service
-- Remove or modify copyright notices and attributions
-- Reverse engineer the SDK to recreate AgentGatePay services
-- Use this SDK to build services that compete with AgentGatePay
+YOU ARE FREE TO:
+✓ Use this SDK in your applications (commercial or non-commercial)
+✓ Modify the SDK for your specific needs
+✓ Include this SDK in your projects and distribute your apps
+✓ Use this SDK in open source or closed source projects
+✓ Deploy applications using this SDK to production
+✓ Share this SDK with your team and developers
+
+SIMPLE RESTRICTION:
+Please don't create a competing payment gateway SDK based on this code.
+Use it to connect to AgentGatePay - that's what it's built for!
 
 DISTRIBUTION:
-You may include this SDK in your applications, but any redistribution must:
-- Maintain all copyright and attribution notices
-- Only be for the purpose of connecting to AgentGatePay services
-- Not enable competitors to bypass AgentGatePay services
-
-INTELLECTUAL PROPERTY:
-All code, protocols, and designs in this SDK are the exclusive property of
-AgentGatePay and are protected by copyright and other intellectual property laws.
+Feel free to include this SDK in your applications. When you distribute your
+app, users get the SDK as part of your integration - that's exactly what we want!
 
 NO WARRANTY:
-This SDK is provided "as is" without warranty of any kind, express or implied,
-including but not limited to warranties of merchantability, fitness for a
-particular purpose, or non-infringement.
+This SDK is provided "as is" without warranty of any kind.
 
-LIMITATION OF LIABILITY:
-In no event shall AgentGatePay be liable for any claim, damages, or other
-liability, whether in an action of contract, tort, or otherwise, arising from
-the use of this SDK or AgentGatePay services.
+QUESTIONS?
+Contact us at: support@agentgatepay.com
 
-PERMISSION REQUESTS:
-For permission to use this SDK beyond the permitted scope, please contact:
-support@agentgatepay.com
+---
+
+Build amazing things with AgentGatePay! We're excited to see what you create.
 
 Last updated: December 11, 2025

@@ -1,33 +1,26 @@
 Copyright (c) 2025 AgentGatePay
 
-SDK LICENSE
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and to permit
+persons to whom the Software is furnished to do so, subject to the following
+conditions:
 
-This SDK is provided to make integrating with AgentGatePay easy and fast.
+1. The Software is intended for use with AgentGatePay services.
 
-YOU ARE FREE TO:
-✓ Use this SDK in your applications (commercial or non-commercial)
-✓ Modify the SDK for your specific needs
-✓ Include this SDK in your projects and distribute your apps
-✓ Use this SDK in open source or closed source projects
-✓ Deploy applications using this SDK to production
-✓ Share this SDK with your team and developers
+2. The Software may not be used for illegal purposes or in violation of any
+   applicable laws and regulations.
 
-SIMPLE RESTRICTION:
-Please don't create a competing payment gateway SDK based on this code.
-Use it to connect to AgentGatePay - that's what it's built for!
+3. The above copyright notice and this permission notice shall be included
+   in all copies or substantial portions of the Software.
 
-DISTRIBUTION:
-Feel free to include this SDK in your applications. When you distribute your
-app, users get the SDK as part of your integration - that's exactly what we want!
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
-NO WARRANTY:
-This SDK is provided "as is" without warranty of any kind.
-
-QUESTIONS?
-Contact us at: support@agentgatepay.com
-
----
-
-Build amazing things with AgentGatePay! We're excited to see what you create.
-
-Last updated: December 11, 2025
+For questions regarding usage rights: support@agentgatepay.com

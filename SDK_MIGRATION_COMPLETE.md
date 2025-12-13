@@ -11,8 +11,8 @@
 - **Purpose:** Follow industry best practices (Stripe, AWS SDK, Coinbase pattern)
 
 ### 2. Migrated Both SDKs
-- ✅ Moved JavaScript/TypeScript SDK (v1.1.0)
-- ✅ Moved Python SDK (v1.1.0)
+- ✅ Moved JavaScript/TypeScript SDK (v1.1.5)
+- ✅ Moved Python SDK (v1.1.5)
 - ✅ Updated all repository URLs in package metadata
 - ✅ Created comprehensive main README
 
@@ -25,7 +25,7 @@
   - Corrected all email addresses (.io → .com)
   - Added comprehensive AIF documentation
 - ✅ **Version Sync:**
-  - Synced package-lock.json version (1.0.0 → 1.1.0)
+  - Synced package-lock.json version (1.0.0 → 1.1.5)
 
 ### 4. Set Up CI/CD Infrastructure
 - ✅ **GitHub Actions Workflows:**
@@ -51,7 +51,7 @@
 - **Status:** Clean, all changes committed and pushed
 - **Commits:** 6 total (migration, fixes, documentation)
 - **Latest:** `52e6c18` - Update package-lock.json version sync
-- **Ready:** Yes - ready for v1.1.0 publish
+- **Ready:** Yes - ready for v1.1.5 publish
 
 ### ✅ agentgatepay-examples
 - **Status:** Clean, all changes committed
@@ -84,7 +84,7 @@
    - Verify examples work
    - Check all documentation links
 
-### Publishing v1.1.0 (First Time Manual)
+### Publishing v1.1.5 (First Time Manual)
 
 **JavaScript:**
 ```bash
@@ -104,8 +104,8 @@ twine upload dist/*
 ### After Publishing
 
 1. ✅ Verify packages:
-   - `npm install agentgatepay-sdk@1.1.0`
-   - `pip install agentgatepay-sdk==1.1.0`
+   - `npm install agentgatepay-sdk@1.1.5`
+   - `pip install agentgatepay-sdk==1.1.5`
 
 2. ✅ Update GitHub Secrets with tokens
 
@@ -157,7 +157,7 @@ twine upload dist/*
 
 ### 🚀 Next Steps (Tomorrow)
 
-**Step 8B: Publish v1.1.0 (~5 minutes)**
+**Step 8B: Publish v1.1.5 (~5 minutes)**
 
 **Prerequisites (Already Done):**
 - ✅ npm account created
@@ -188,4 +188,4 @@ twine upload dist/*
 
 **Migration completed successfully! 🎉**
 
-**Status:** Ready to publish v1.1.0 tomorrow.
+**Status:** Ready to publish v1.1.5 tomorrow.

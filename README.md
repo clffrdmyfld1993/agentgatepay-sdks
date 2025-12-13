@@ -4,7 +4,7 @@ Official JavaScript/TypeScript and Python SDKs for [AgentGatePay](https://api.ag
 
 [![npm version](https://badge.fury.io/js/agentgatepay-sdk.svg)](https://www.npmjs.com/package/agentgatepay-sdk)
 [![PyPI version](https://badge.fury.io/py/agentgatepay-sdk.svg)](https://pypi.org/project/agentgatepay-sdk/)
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](./javascript/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
@@ -322,9 +322,7 @@ twine upload dist/*
 
 ## License
 
-Proprietary EULA - see [LICENSE](./javascript/LICENSE) for details.
-
-This SDK is free to use for integrating with AgentGatePay services. See LICENSE file for complete terms.
+MIT License - see [LICENSE](./javascript/LICENSE) for details.
 
 ---
 

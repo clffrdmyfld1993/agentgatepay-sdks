@@ -1,47 +1,67 @@
-name: Test JavaScript SDK
+name: CI Workflows
 
 on:
   push:
-    branches: [ main, develop ]
-    paths:
-      - 'javascript/**'
-      - '.github/workflows/test-javascript.yml'
+    branches:
+      - main
   pull_request:
-    branches: [ main, develop ]
-    paths:
-      - 'javascript/**'
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x, 20.x]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        working-directory: ./javascript
-        run: npm ci
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Run linter
-        working-directory: ./javascript
-        run: npm run lint || echo "⚠️ Linting not configured yet - skipping"
-        continue-on-error: true
+      - name: Run Google Wallet Pass API Integration Tests
+        run: npm test -- --testNamePattern='Google Wallet'
 
-      - name: Build package
-        working-directory: ./javascript
-        run: npm run build
+      - name: Run Multi-Chain Payment Flow Tests
+        run: npm test -- --testNamePattern='Multi-Chain Payment'
 
-      - name: Run tests
-        working-directory: ./javascript
-        run: npm test || echo "⚠️ Tests not configured yet - skipping"
-        continue-on-error: true
+      - name: Run Stablecoin Validation Tests
+        run: npm test -- --testNamePattern='Stablecoin Validation'
+
+      - name: Run Merchant Payment Verification Tests
+        run: npm test -- --testNamePattern='Merchant Verification'
+
+      - name: Run Webhook Integration Tests
+        run: npm test -- --testNamePattern='Webhook Integration'
+
+      - name: Run Mandate Budget Validation Tests
+        run: npm test -- --testNamePattern='Mandate Budget'
+
+      - name: Run Agent Reputation System Tests
+        run: npm test -- --testNamePattern='Agent Reputation'
+
+      - name: Run Performance Benchmarks
+        run: npm run performance -- --threshold=5
+
+      - name: Build Test Report Artifact
+        run: mkdir -p reports && cp test-results/* reports/
+
+      - name: Upload Test Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-report
+          path: reports/
+
+      - name: Security Scanning
+        run: npm run audit
+
+      - name: Node.js Error Reporting
+        run: node -e "process.on('uncaughtException', err => console.error(err));"
